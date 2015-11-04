@@ -1,0 +1,76 @@
+\documentclass[compress,10pt]{beamer}
+% Printable version
+%\documentclass[10pt, green, handout]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}      
+\usepackage{xcolor}       
+\usetheme{UoB}  %Use UoB theme
+
+% Pdf meta-information
+\hypersetup{
+pdfpagemode = FullScreen, % Start on full-screen
+pdfauthor   = {},%
+pdftitle    = {},%
+pdfsubject  = {},%
+pdfkeywords = {Latex,Beamer,Science,Impact},%
+pdfcreator  = {PDFLaTeX,latexstudio},%
+pdfproducer = {UoB}%
+}
+
+
+\title{University of Bristol Beamer Theme}
+\subtitle{Demonstration}
+\author{Author}
+
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+\section{Debut}
+
+\begin{frame}{First page}
+
+\begin{itemize}
+\item test1
+\item test2
+\end{itemize} 
+{\onslide<2->
+\begin{alertblock}{Attention}
+  Attention.
+\end{alertblock}
+}
+\end{frame}
+
+\begin{frame}[fragile]{Modifications}
+\begin{block}{General Block}
+  \begin{enumerate}
+  \item Different items
+  \item Can be added.
+  \end{enumerate}
+\end{block}
+
+{
+\begin{exampleblock}{Example}
+This is an example.
+\end{exampleblock}
+}
+\end{frame}
+
+\section{Fin}
+
+\begin{frame}{Second page}
+
+\begin{itemize}
+\item <1-> $\LaTeX$ Equations
+\item <2-> $ y= \pi + \sum^{n}_{i=1} \alpha_i + e  $
+\item <3-> Slides changing...
+\end{itemize}  
+\end{frame}
+
+\end{document}
+
