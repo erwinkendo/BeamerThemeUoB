@@ -1,4 +1,4 @@
-\ProvidesPackage{beamerouterthemeUoB}[2013/02/20]
+\ProvidesPackage{beamerouterthemeUoB}[2016/05/05]
 % University of Bristol Beamer theme by Erwin Lopez
 %
 % based on INRA Beamer theme by François Guillaume and the LaTeX-Beamer package :
@@ -8,7 +8,24 @@
 % of the Apache License.
 
 \makeatletter
+% Make sure can be used with pdflatex
+\ifpdf
+	\usepackage{epstopdf}
+\fi
 
+% Special feature for lualatex and xelatex, to use the official UoB font
+\ifxetex
+	\usefonttheme{professionalfonts}
+	\usefonttheme{serif}
+	\usepackage{fontspec}
+	\setmainfont{Helvetica Neue}
+\fi
+\ifluatex
+	\usefonttheme{professionalfonts}
+	\usefonttheme{serif}
+	\usepackage{fontspec}
+	\setmainfont{Helvetica Neue}
+\fi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % Background 
@@ -16,7 +33,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setbeamertemplate{background canvas}{%
-  \includegraphics[width=\paperwidth,height=\paperheight]{logo}
+  \includegraphics[width=\paperwidth,height=\paperheight]{logo.eps}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
