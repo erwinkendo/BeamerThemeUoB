@@ -8,3 +8,10 @@ Just copy **logo.eps** **beamercolorthemeUoB.sty** **beamerouterthemeUoB.sty** a
 The file test.tex gives a small example of how to use the theme.
 
 For lualatex and xelatex users, the additional feature of using the official University of Bristol font is available.
+
+Follow the license, share with others and be happy.
+
+<p align="center">
+<img src="logo.png">
+</p>
+
